@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caudex:wght@400&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Caudex', serif;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('file:///C:/Users/cyber/OneDrive/Documents/WhatsApp%20Image%202024-12-30%20at%2018.15.20_0ccd9eed.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:violet;
+    backdrop-filter: blur(0.5px);
+    border-radius: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.event-title {
+    font-family: 'Audiowide', cursive;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 45px;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    --glow-color: rgb(217, 176, 255);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    
+}
+
+.event-section {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #555;
+    position: relative;
+}
+
+.event-section .box {
+    position: relative;
+    width: 48%;
+    height: 700px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+  
+}
+
+.ed{
+    position :absolute;
+    width:93.5%;
+    height: 93.5%;
+    transform-style: preserve-3d;
+    transition:all 1500ms;
+}
+
+.box:hover>.ed{
+    cursor: pointer;
+    transform:  rotateY(180deg);
+}
+
+.front{
+    position :absolute;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    backface-visibility: hidden;
+    color:white;
+    align-content: center;
+    font-size: 40px;
+    font-family: 'Audiowide', cursive;
+
+}
+
+.back{
+    position :absolute;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    backface-visibility: hidden;
+    color:white;
+    font-size: 25px;
+    align-content: center;
+    font-family: 'Caudex', serif;
+    transform: rotateY(180deg);
+    text-align: justify;
+    
+}
+
+.coordinator-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .coordinator-box {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.78);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 
+        0 0 1em 0.25em var(--glow-color), 
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    width: 30%;
+    height: 220px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+
+
+
+.details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.e5{
+    font-size: 18px;
+    font-weight: 100;
+    text-align: left;
+    line-height: 1.2px;
+}
+
+.name{
+    height: 100%;
+    width: 65%;
+    padding-left: 18px;
+    text-align: left;
+    line-height: 33px;
+    padding-top: 10px;
+}
+
+.image{
+    width: 100px;
+    height:150px;
+}  
+
+.prize-box {
+    width: 100%;
+    height: 110px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.prize{
+    position: relative;
+    width: 40%;
+    height:100%;
+    font-size: 40px;
+    color: white;
+    padding: 5px;
+}
+
+.back1{
+    position :absolute;
+    width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    backface-visibility: hidden;
+    color:white;
+    align-content: center;
+    font-size: 40px;
+    transform: rotateX(180deg) rotateZ(180deg);
+    
+}
+
+.prize:hover>.ed{
+    cursor: pointer;
+    transform:  rotateX(180deg) rotateZ(180deg);
+}
+
+
+.footer {
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    backdrop-filter: blur(15px);
+    border-top: 1px solid #555;
+    border-radius: 0 0 16px 16px;
+}
+
+button {
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.78);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+
+    border: 0.25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 
+        0 0 1em 0.25em var(--glow-color), 
+        0 0 4em 1em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color);
+    text-shadow: 0 0 0.5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+}
+
+button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(20px);
+    opacity: 0.7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, 0.6);
+}
+
+button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 
+        0 0 1em 0.25em var(--glow-color),
+        0 0 4em 2em var(--glow-spread-color),
+        inset 0 0 0.75em 0.25em var(--glow-color);
+}
+
+button:active {
+    box-shadow: 
+        0 0 0.6em 0.25em var(--glow-color),
+        0 0 2.5em 2em var(--glow-spread-color),
+        inset 0 0 0.5em 0.25em var(--glow-color);
+}
+
+
+.register-button {
+    margin: 30px 0;
+    padding: 20px 40px;
+    font-size: 28px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+a {
+    color: rgb(231, 206, 255); 
+    text-decoration : none;
+}
+
+a:hover {
+    color: rgba(191, 123, 255, 0.78); 
+}
